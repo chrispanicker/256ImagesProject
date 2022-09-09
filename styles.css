@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'universcondbold';
+  src:  url('./assets/typefaces/universCondBold.woff2') format('woff2'),
+        url('./assets/typefaces/universCondBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'universcondreg';
+  src:  url('./assets/typefaces/universCondReg.woff2') format('woff2'),
+        url('./assets/typefaces/universCondReg.woff') format('woff');
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  font-family: universcondbold;
+}
+
+.header{
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 94vw;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+  /*background: black; */
+}
+
+.gallery img{
+  margin: 0;
+  width: auto;
+  height: 40vh;
+  padding: 0;
+}
+
+
+
+/*DROPDOWN MENUS*/
+button{
+  border: none;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownOptions{
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .dropdownOptions{
+  display: block;
+}
+
+
+img{
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+img:hover{
+  opacity: .8;
+}
+
+.galleryDiv{
+  margin: 2vw;
+}
+
+
+
+
